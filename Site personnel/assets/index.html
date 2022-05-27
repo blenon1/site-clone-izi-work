@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>ALPHAchange/Accueil</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://kit.fontawesome.com/752417f993.js" crossorigin="anonymous"></script>
@@ -13,7 +14,9 @@
       <section>
           <nav class="flex justify-center text-center items-center space-x-10 text-xl border-y-4 bg-gray-200 h-20 ">
              <!--logo ici-->
-             <p class="hover:border-t-4 hover:border-indigo-500"> <a href="#">Accueil</a> </p>
+             <label class="font-bold text-red-400 text-2xl" for="site"><a href="#">ALPHAchange</a></label>
+
+             <p class="hover:border-t-4 hover:border-indigo-500"> <a href="Accueil">Accueil</a> </p>
 
              <p class="hover:border-t-4 hover:border-indigo-500"> <a href="#">Nos services</a></p>
 
@@ -26,7 +29,7 @@
               <button class="border-2  pl-4 pr-4 bg-white rounded-full hover:border-slate-400   " ><p> <a  href="#">Inscription</a></p>
               </button>
 
-              <select name="lang-menu" class="selected-lang border-none bg-gray-200 cursor-pointer focus:outline-none" value="click" >
+              <select name="lang-menu" class="-py-8 selected-lang border-gray-200 rounded-lg bg-gray-200 hover:border-indigo-500 cursor-pointer focus:outline-none" value="click" >
                   <option value="langue1"><a id="Fr"  href="#" ></a>Fr</option>
                   <option value="langue2"><a id="An" href="#">An</a></option>
               </select>
@@ -34,31 +37,42 @@
       </section>  
     </header>
     <main>
-        <section class=" bg-cover bg-no-repeat " style="background-image: url(./img/bith.jpg)"></section>">
+        <section class="text-white bg-[url('./img/bith.jpg')] bg-cover bg-center">
+            <div>
                 <div class="flex pt-20 " >
                     <div class="pt-20">
-                             <p class="text-5xl"> Achetez et vendez facilement vos cryptomonnaies.</p>
+                             <p class="font-bold text-5xl ml-10"> Achetez et vendez facilement <br> vos cryptomonnaies.</p>
 
-                       <div class="pt-4">
-                            <p>Rejoignez la plus grande plateforme d'achat et de vente dès aujourd'hui.</p>
+                       <div class="pt-4 ml-10 text-2xl mb-4">
+                            <p>Rejoignez la plus grande plateforme d'achat et de vente <br> dès aujourd'hui.</p>
                        </div>
                            
                     </div>
 
-                   <div class="h-20 w-100">
-                       <img src=" " alt="">
+                   <div class="h-20 w-50 mt-40 mr-50">
+                       <img class="phone" src="./img/code.png" alt="">
                    </div>
 
                 </div>
                 
                 <div>
-                    <input type="email" name="Votre adresse e-lmail" id="#">
+                    <input class="ml-10 rounded-md text-black" type="email" placeholder="Votre adresse e-mail" id="#">
                 </div>
                 <div>
-                    <button>
+                    <button class="ml-10 mt-3 mb-40">
                         <a href="#">S'inscrire</a>
                     </button>
                 </div>
+                
+
+            </div>
+        </section>
+
+                <!-----------------------site a finaliser---------------site original izichange.com---------->
+               
+
+
+                
         </section>
         
     
